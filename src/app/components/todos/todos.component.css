@@ -1,0 +1,90 @@
+
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+app-single-todo {
+    flex-basis: 23%; 
+    box-sizing: border-box; 
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+}
+.heading{
+    margin-left: 20px;
+    margin-right: 5px;
+    
+}
+.welcome{
+    background-color: aqua;
+    width: 20%;
+    height: 35px;
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 1%;
+    color: rgb(7, 7, 92);
+}
+
+.no-of-todos{
+  background-color: aqua;
+  margin-top: 20px;
+  margin-left: 24%;
+  height: 25px;
+  width: 10%;
+  text-decoration: underline;
+  font-size: large;
+  color: rgb(7, 7, 92);
+  font-weight: 500;
+}
+.no-todo{
+  font-size: larger;
+  margin: 40px;
+  text-align: center;
+
+}
+.add-todo button{
+width: 40%;
+font-weight: bolder;
+font-size: large;
+color: rgb(75, 25, 3);
+background-color: rgb(98, 85, 216);
+margin-left: 30%;
+}
+
+.input-field {
+  width: 100%;
+}
+.flex-todo{
+  display: flex;
+}
+.header{
+  display: flex;
+  margin-bottom: 20px;
+}
+.save-cancel-button {
+    display: flex;
+  }
+  
+  .action-button-save,
+  .action-button {
+    flex: 1; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+  }
+  
+  .mat-raised-button {
+    width: 100%; 
+  }
+  
+
+form{
+    margin-left: 20px;
+}
+
+
+mat-form-field {
+    width: 95%;
+  }

@@ -1,0 +1,30 @@
+
+
+.input-field {
+    width: 100%;
+  }
+  
+  .save-cancel-button {
+      display: flex;
+    }
+    
+    .action-button-save,
+    .action-button {
+      flex: 1; 
+      margin-right: 10px; 
+      margin-bottom: 10px;
+    }
+    
+    .mat-raised-button {
+      width: 100%; 
+    }
+    
+    form{
+        margin: 4% 150px;
+    }
+      
+       mat-form-field {
+        margin-bottom: 5px;
+        width: 100%;
+      }
+ 

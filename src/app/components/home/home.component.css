@@ -1,0 +1,22 @@
+mat-card{
+    height: 80vh;
+    background-color: inherit;
+}
+
+p{
+    margin: 20px;
+    font-size: large;
+    color: rgb(3, 29, 3);
+    font-weight: 500;
+}
+h1{
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+img{
+    height: 300px;
+    width: 400px;
+    margin-left: 34%;
+}

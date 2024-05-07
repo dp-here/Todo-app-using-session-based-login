@@ -1,0 +1,16 @@
+
+  form{
+    margin: 4% 150px;
+}
+  
+   mat-form-field {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  

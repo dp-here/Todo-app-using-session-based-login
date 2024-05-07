@@ -1,0 +1,21 @@
+<app-logged-in-navigation></app-logged-in-navigation>
+<div class="header">
+  <div class="welcome">
+    <div class="heading">
+      <h2>Welcome,</h2>
+    </div>
+    <div style="text-decoration: underline; cursor: pointer;" (click)="openDialog()">
+      <h2>Add todo here</h2>
+    </div>
+  </div>
+  <div class="no-of-todos">No of todos. {{todoList.length}}</div>
+</div>
+<div class="todo-container">
+  <div class="no-todo" *ngIf="todoList.length==0"><h1>NO TODO TO SHOW. Please create todo to see your todos.</h1></div>
+  <app-single-todo *ngFor="let todo of todoList" [todo]="todo" (editTodo)="onEditTodo($event)" (deleteTodo)="onDeleteTodo($event)">
+  </app-single-todo>
+</div>
+
+<div id="add" class="add-todo">
+  <button mat-raised-button (click)="openDialog()">Add Todo</button>
+</div>

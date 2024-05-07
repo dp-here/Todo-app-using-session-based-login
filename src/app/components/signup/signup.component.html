@@ -1,0 +1,44 @@
+<app-navigation></app-navigation>
+
+<form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+  <mat-form-field>
+    <mat-label>Name:</mat-label>
+    <input matInput type="text" formControlName="name">
+    <mat-error *ngIf="signupForm.get('name')?.invalid && (signupForm.get('name')?.dirty || signupForm.get('name')?.touched)">
+      <span *ngIf="signupForm.get('name')?.errors?.['required']">Name is required.</span>
+      <span *ngIf="signupForm.get('name')?.errors?.['whitespace']"> No whitespace allowed  </span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email:</mat-label>
+    <input matInput type="email" formControlName="email">
+    <mat-error *ngIf="signupForm.get('email')?.invalid && (signupForm.get('email')?.dirty || signupForm.get('email')?.touched)">
+      <span *ngIf="signupForm.get('email')?.errors?.['required']">Email is required.</span>
+      <span *ngIf="signupForm.get('email')?.errors?.['whitespace']">No whitespace allowed</span>
+      <span *ngIf="signupForm.get('email')?.errors?.['email']">Invalid email format</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Password:</mat-label>
+    <input matInput type="password" formControlName="password">
+    <mat-error *ngIf="signupForm.get('password')?.invalid && (signupForm.get('password')?.dirty || signupForm.get('password')?.touched)">
+      <span *ngIf="signupForm.get('password')?.errors?.['required']">Password is required.</span>
+      <span *ngIf="signupForm.get('password')?.errors?.['minlength']">Min length should be 7.</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Confirm Password:</mat-label>
+    <input matInput type="password" formControlName="confirmPassword">
+    <mat-error *ngIf="signupForm.get('confirmPassword')?.invalid && (signupForm.get('confirmPassword')?.dirty || signupForm.get('confirmPassword')?.touched)">
+      <span *ngIf="signupForm.get('confirmPassword')?.errors?.['required']">Confirm Password is required.</span>
+      <span *ngIf="signupForm.hasError('passwordMismatch')">
+        Passwords do not match
+      </span>
+    </mat-error>
+  </mat-form-field>
+
+  <button color="accent" [disabled]="!signupForm.valid" mat-raised-button type="submit"><span>Sign up</span></button>
+</form>

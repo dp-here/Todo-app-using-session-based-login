@@ -1,0 +1,12 @@
+.form{
+    height: 400px;
+    width: 600px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.form h1{
+    vertical-align:middle;
+    margin-top: 175px;
+    color: brown;
+}

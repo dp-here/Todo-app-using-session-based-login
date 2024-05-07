@@ -1,0 +1,21 @@
+mat-form-field{
+    width: 100%;
+}
+
+button{
+    width: 200px;
+}
+
+form{
+    margin: 4% 150px;
+}
+
+.forgot-password{
+font-size: large;
+font-weight: 500;
+margin-bottom: 20px;
+text-decoration: underline;
+}
+.forgot-password :hover{
+    cursor: pointer;
+}

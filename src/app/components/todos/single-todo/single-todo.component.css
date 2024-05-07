@@ -1,0 +1,107 @@
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 5%;
+    position: relative;
+  }
+
+  .spiral-image {
+    position: absolute; 
+    top: -30px; 
+    left: 130px;
+    margin-bottom: 0px; 
+    z-index: 1; 
+    mix-blend-mode: multiply;
+}   
+  
+  mat-card {
+    flex: 1;
+    width: 100%;
+    margin: 0px 15px 15px 30px;
+    background-color: rgb(195, 235, 235);
+    display: flex;
+    flex-direction: column;
+    height: 140px
+  }
+
+  img{
+    height: 40px;
+    
+  }
+  .priority-title{
+   width: 90%;
+  }
+
+  mat-card .todo-title {
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+  mat-card .todo-body {
+    margin-left: 20px;
+    color: rgb(12, 36, 116);
+  }
+  mat-card .todo-meta {
+    margin-left: 20px;
+    font-size: small;
+  }
+  .todo-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px;
+  }
+  
+  .icons-body{
+      display: flex;
+  }
+  
+  .todo-title {
+    font-weight: bold;
+    color: blue;
+  }
+  .todo-deadline{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  }
+  
+  .todo-meta {
+    font-size: 16px;
+    color: rgb(221, 101, 32);
+    margin-top: 1em;
+  }
+  
+  .todo-body {
+    font-weight:500;
+    margin-bottom: 2px;
+    cursor: pointer;
+  }
+  
+  .input-field {
+    width: 100%;
+  }
+  
+  .save-cancel-button {
+      display: flex;
+    }
+    
+    .action-button-save,
+    .action-button {
+      flex: 1; 
+      margin-right: 10px; 
+      margin-bottom: 10px;
+    }
+    
+    .mat-raised-button {
+      width: 100%; 
+    }
+    
+  
+  form{
+      margin-left: 20px;
+  }
+  
+  
+  mat-form-field {
+      width: 95%;
+    }
